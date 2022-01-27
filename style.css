@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.header {
+  background-color: #3DBEFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.logo-svg{
+    height: 13%;
+    width: 13%;
+}
