@@ -105,7 +105,7 @@ ul {
     transition: visibility 0s ease-out 0s, opacity 300ms;
   }
   .top-image {
-    background-image: url(/images/mobile/image-header.jpg);
+    background-image: url(./images/mobile/image-header.jpg);
     background-color: #fff;
     color: #000;
     height: 517px;
