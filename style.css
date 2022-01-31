@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 
 body {
-  background-color: lightcyan;
+  background-color: hsl(228, 45%, 44%);
   margin: 0em;
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@ ul {
     background-image: url(./images/mobile/image-header.jpg);
     background-color: #fff;
     color: #000;
-    height: 517px;
+    height: 521px;
     background-repeat: no-repeat;
     background-size: contain;
   }
