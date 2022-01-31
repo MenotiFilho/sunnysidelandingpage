@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+
+body {
+  background-color: lightcyan;
+  margin: 0em;
+  display: flex;
+  flex-direction: column;
+  overflow: initial;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -5,13 +16,143 @@ ul {
   gap: 1em;
 }
 .header {
-  background-color: #3DBEFF;
+  background-color: #3dbeff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  position: sticky;
+  opacity: 1;
 }
-.logo-svg{
-    height: 13%;
-    width: 13%;
+.logo-svg {
+  margin-left: 1.5em;
+}
+.menu-text {
+  color: white;
+  margin-right: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: Barlow;
+  font-weight: 600;
+}
+.contact {
+  color: black;
+  background-color: hsl(51, 100%, 49%);
+  border-radius: 5em;
+  padding: 0.7em;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+.menu-ham {
+  display: none;
+}
+
+@media (max-width: 35em) {
+  .menu-text {
+    color: hsl(232, 10%, 55%);
+
+    position: fixed;
+    inset: 0 0 0 30%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 14em;
+    margin-top: 3.5em;
+    padding-left: 20px;
+    margin-left: auto;
+    font-size: 1.2em;
+    gap: 1.8em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 350ms ease-out;
+    opacity: 0;
+    transition: ease-in 350ms, opacity 350ms;
+  }
+
+  .menu-text[data-visible="true"] {
+    max-height: 220px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-right: 20px solid white;
+    border-top: 20px solid transparent;
+    background-clip: padding-box;
+    transition: max-height 350ms ease-in;
+    opacity: 1;
+    transition: ease-in 350ms, opacity 350ms;
+  }
+
+  .menu-ham {
+    display: flex;
+    margin-right: 1.5em;
+    cursor: pointer;
+
+    opacity: 1;
+    transition: visibility 0s ease-in 0s, opacity 300ms;
+  }
+
+  .menu-ham[data-visible="true"] {
+    opacity: 0.5;
+    transition: visibility 0s ease-out 0s, opacity 300ms;
+  }
+  .top-image {
+    background-image: url(/images/mobile/image-header.jpg);
+    background-color: #fff;
+    color: #000;
+    height: 517px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .text-weare {
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 3em;
+
+    letter-spacing: 0.1em;
+    color: white;
+    text-align: center;
+  }
+  .arrow-down {
+    height: 9em;
+    width: auto;
+  }
+  .header {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+
+.second-part {
+  background: lightcyan;
+}
+.third-part {
+  background: lightgray;
+}
+.fourth-part {
+  background: lightcyan;
+}
+.fifth-part {
+  background: lightgray;
+}
+.footer {
+  background: lightcyan;
 }
